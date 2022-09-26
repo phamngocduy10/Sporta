@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Sporta</string>
+    <string name="facebook_app_id">379264107597591</string>
+<string name="fb_login_protocol_scheme">fb379264107597591</string>
+<string name="facebook_client_token">3ec55f245d7c91890aa4fc1cb4a481bf</string>
 </resources>

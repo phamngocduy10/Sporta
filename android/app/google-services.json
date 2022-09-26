@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "763384337941",
+    "project_id": "sporta-40818",
+    "storage_bucket": "sporta-40818.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763384337941:android:47ef250502d2ae73e6e01c",
+        "android_client_info": {
+          "package_name": "com.sporta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763384337941-pob2m1pntu8m1omu1uden47k1o7po1ci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sporta",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "763384337941-s6ibbnrinjj934f8hjrv9rm2buol11n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcQUreddlUj0vu-MUVUq_Ul9MG_j6vBj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763384337941-s6ibbnrinjj934f8hjrv9rm2buol11n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

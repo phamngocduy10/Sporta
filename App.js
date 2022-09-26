@@ -19,6 +19,7 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import { LoginRouter } from './src/LoginRouter/LoginRouter';
+import Login from './src/Login/Login';
 
 
 const App = () => {
@@ -27,6 +28,9 @@ const App = () => {
     <NavigationContainer>
       <LoginRouter />
     </NavigationContainer>
+    // <View>
+    //   <Login />
+    // </View>
   );
 };
 
