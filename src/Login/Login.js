@@ -25,7 +25,7 @@ export default function Login({ navigation }) {
         );
     }
     const skip = () => {
-        let user = { name: fake }
+        let user = { name: 'fake' }
         gotoTab(user)
         console.log("skip", navigation);
     }

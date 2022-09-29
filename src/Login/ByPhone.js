@@ -6,6 +6,7 @@ import HeaderView from '../components/HeaderView'
 import Icon from 'react-native-vector-icons/AntDesign';
 import SelectDropdown from 'react-native-select-dropdown'
 import auth from '@react-native-firebase/auth';
+import { CommonActions } from '@react-navigation/native';
 
 export default function ByPhone({ navigation }) {
     const countries = ["+84", "+34", "+23", "+45"]
@@ -15,18 +16,37 @@ export default function ByPhone({ navigation }) {
     const [confirm, setConfirm] = useState(null);
 
     const [code, setCode] = useState('');
+    const gotoTab = (user) => {
+        navigation.dispatch(
+            CommonActions.reset({
+                index: 0,
+                routes: [
+                    {
+                        name: 'MainTab',
+                        params: { user: user },
+                    },
+                ],
+            })
+        );
+    }
 
     // Handle the button press
     async function signInWithPhoneNumber(phoneNumber) {
-        const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
+
+        const confirmation = await auth().signInWithPhoneNumber(phoneNumber)
+
         setConfirm(confirmation);
     }
 
     async function confirmCode() {
         try {
-            await confirm.confirm(code);
+            await confirm.confirm(code).then((user) => {
+                console.log("assssssssdasdsad", user);
+                gotoTab(user)
+            });
             console.log("confirm");
-            navigation.navigate("MainTab")
+            // navigation.navigate("MainTab")
+
         } catch (error) {
             console.log('Invalid code.');
         }

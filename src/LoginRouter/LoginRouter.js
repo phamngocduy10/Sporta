@@ -20,17 +20,17 @@ export function LoginRouter() {
                 headerShown: false
             }}
         >
-            <Stack.Screen name="Account" component={Account} />
-            <Stack.Screen name="CreateClub" component={CreateClub} />
-            <Stack.Screen name="SearchClub" component={CreateClub} />
-            <Stack.Screen name="Settings" component={Settings} />
-            <Stack.Screen name="Login" component={Login} />
-            <Stack.Screen name="Register" component={Register} />
+            <Stack.Screen name="Account" component={Account} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="CreateClub" component={CreateClub} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="SearchClub" component={CreateClub} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="Settings" component={Settings} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="Login" component={Login} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="Register" component={Register} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
             <Stack.Screen name="MainTab" component={MainTab} />
-            <Stack.Screen name="Match" component={Match} />
-            <Stack.Screen name="ByPhone" component={ByPhone} />
-            <Stack.Screen name="ByMail" component={ByMail} />
-            <Stack.Screen name="ForgetPassword" component={ForgetPassword} />
+            <Stack.Screen name="Match" component={Match} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="ByPhone" component={ByPhone} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="ByMail" component={ByMail} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
+            <Stack.Screen name="ForgetPassword" component={ForgetPassword} options={{ gestureEnabled: true, gestureDirection: "horizontal", gestureResponseDistance: 400 }} />
         </Stack.Navigator>
     );
 }
