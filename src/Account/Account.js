@@ -70,7 +70,7 @@ export default function Account({ route }) {
                       timestamp: '1513190221416'
                     }
                     */
-                    console.log(location);
+                    console.log("thi ra vao day",location);
                 });
 
                 /* Optional
@@ -99,10 +99,10 @@ export default function Account({ route }) {
             preventBackClick: false, // true => To prevent the location services popup from closing when it is clicked back button
             providerListener: false // true ==> Trigger locationProviderStatusChange listener when the location state changes
         }).then(function (success) {
-            console.log(success); // success => {alreadyEnabled: false, enabled: true, status: "enabled"}
+            //console.log(success); // success => {alreadyEnabled: false, enabled: true, status: "enabled"}
             requestPermissions()
         }).catch((error) => {
-            console.log(error.message); // error.message => "disabled"
+            //console.log(error.message); // error.message => "disabled"
         });
 
         BackHandler.addEventListener('hardwareBackPress', () => { //(optional) you can use it if you need it
@@ -110,7 +110,7 @@ export default function Account({ route }) {
             LocationServicesDialogBox.forceCloseDialog();
         });
         DeviceEventEmitter.addListener('locationProviderStatusChange', function (status) { // only trigger when "providerListener" is enabled
-            console.log(status); //  status => {enabled: false, status: "disabled"} or {enabled: true, status: "enabled"}
+            //console.log(status); //  status => {enabled: false, status: "disabled"} or {enabled: true, status: "enabled"}
         });
 
         return () => {
